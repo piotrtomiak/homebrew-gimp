@@ -1,4 +1,4 @@
-class Libgimp20AT21018 < Formula
+class Libgimp20AT21032 < Formula
   desc "Headers and other files for compiling plugins for GIMP"
   homepage "https://www.gimp.org/"
   url "https://gitlab.gnome.org/GNOME/gimp.git", tag: "GIMP_2_10_32"
