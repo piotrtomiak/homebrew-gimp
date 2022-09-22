@@ -6,7 +6,7 @@ class MypaintBrushes < Formula
   version "v1.3.x"
 
   bottle do
-    root_url "https://github.com/ryan-robeson/homebrew-gimp/releases/download/v1.0"
+    root_url "https://github.com/piotrtomiak/homebrew-gimp/releases/download/v1.0"
     sha256 cellar: :any_skip_relocation, catalina:    "370bda5f529377983e0a6a17a58ff29f437f03885e2dc92f4e49e262fdbcfd65"
     sha256 cellar: :any_skip_relocation, mojave:      "370bda5f529377983e0a6a17a58ff29f437f03885e2dc92f4e49e262fdbcfd65"
     sha256 cellar: :any_skip_relocation, high_sierra: "370bda5f529377983e0a6a17a58ff29f437f03885e2dc92f4e49e262fdbcfd65"
@@ -32,7 +32,7 @@ class MypaintBrushes < Formula
         `brew uninstall mypaint-brushes; brew install --build-from-source mypaint-brushes`
 
       Please report any issues to:
-        https://github.com/ryan-robeson/homebrew-gimp/issues
+        https://github.com/piotrtomiak/homebrew-gimp/issues
     EOS
     s
   end

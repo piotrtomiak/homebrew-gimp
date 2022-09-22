@@ -6,7 +6,7 @@ require "shellwords"
 
 bottle_dir = "bottles"
 local_url = "http://127.0.0.1:8000"
-release_url = "https://github.com/ryan-robeson/homebrew-gimp/releases/download/"
+release_url = "https://github.com/piotrtomiak/homebrew-gimp/releases/download/"
 
 def usage
   $stderr.puts <<~eos
@@ -94,7 +94,7 @@ if ! status.success?
 end
 
 # out looks like:
-# ==> Determining ryan-robeson/gimp/resynthesizer bottle rebuild...
+# ==> Determining piotrtomiak/gimp/resynthesizer bottle rebuild...
 # ==> Bottling resynthesizer--2.0.3.sierra.bottle.1.tar.gz...
 # ./resynthesizer--2.0.3.sierra.bottle.1.tar.gz
 #   bottle do

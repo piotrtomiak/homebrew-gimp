@@ -5,7 +5,7 @@ class ResynthesizerAT21018 < Formula
   url "https://github.com/bootchk/resynthesizer.git", tag: "v2.0.3"
 
   bottle do
-    root_url "https://github.com/ryan-robeson/homebrew-gimp/releases/download/v1.2"
+    root_url "https://github.com/piotrtomiak/homebrew-gimp/releases/download/v1.2"
     cellar :any
     sha256 "82dd8abe8a17760500c3ef53a8df05cf9ebef03b81c87a92b6227ec5b15b5cba" => :catalina
     sha256 "82dd8abe8a17760500c3ef53a8df05cf9ebef03b81c87a92b6227ec5b15b5cba" => :mojave
@@ -17,7 +17,7 @@ class ResynthesizerAT21018 < Formula
   depends_on "automake" => :build
   depends_on "intltool" => :build
   depends_on "pkg-config" => :build
-  depends_on "ryan-robeson/gimp/libgimp2.0@2.10.18"
+  depends_on "piotrtomiak/gimp/libgimp2.0@2.10.18"
 
   def install
     system "./autogen.sh"
@@ -139,7 +139,7 @@ class ResynthesizerAT21018 < Formula
         `brew uninstall #{specified_name}; brew install --build-from-source #{specified_name}`
 
       Please report any issues to:
-        https://github.com/ryan-robeson/homebrew-gimp/issues
+        https://github.com/piotrtomiak/homebrew-gimp/issues
     EOS
     s
   end

@@ -5,7 +5,7 @@ class Libgimp20AT21014 < Formula
   version "2.10.14"
 
   bottle do
-    root_url "https://github.com/ryan-robeson/homebrew-gimp/releases/download/v1.2"
+    root_url "https://github.com/piotrtomiak/homebrew-gimp/releases/download/v1.2"
     cellar :any
     sha256 "82527457f19478b20985b90597144f3e5d40fdcb4fa7369e20a1b05b62f26b0a" => :catalina
     sha256 "82527457f19478b20985b90597144f3e5d40fdcb4fa7369e20a1b05b62f26b0a" => :mojave
@@ -33,8 +33,8 @@ class Libgimp20AT21014 < Formula
     librsvg
     pango
     poppler
-    ryan-robeson/gimp/pygtk
-    ryan-robeson/gimp/mypaint-brushes
+    piotrtomiak/gimp/pygtk
+    piotrtomiak/gimp/mypaint-brushes
   ].each do |d|
     depends_on d
   end
@@ -92,7 +92,7 @@ class Libgimp20AT21014 < Formula
         `brew uninstall #{specified_name}; brew install --build-from-source #{specified_name}`
 
       Please report any issues to:
-        https://github.com/ryan-robeson/homebrew-gimp/issues
+        https://github.com/piotrtomiak/homebrew-gimp/issues
     EOS
     s
   end

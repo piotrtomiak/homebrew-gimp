@@ -5,7 +5,7 @@ class PixelArtScalers < Formula
   url "https://github.com/bbbbbr/gimp-plugin-pixel-art-scalers.git", tag: "v1.1"
 
   bottle do
-    root_url "https://github.com/ryan-robeson/homebrew-gimp/releases/download/v1.3"
+    root_url "https://github.com/piotrtomiak/homebrew-gimp/releases/download/v1.3"
     cellar :any
     sha256 "ba1438c943e0945b18f4cb0046bbe0c544b42215fef4e710f4af03d9e709a9f3" => :catalina
     sha256 "ba1438c943e0945b18f4cb0046bbe0c544b42215fef4e710f4af03d9e709a9f3" => :mojave
@@ -13,7 +13,7 @@ class PixelArtScalers < Formula
     sha256 "ba1438c943e0945b18f4cb0046bbe0c544b42215fef4e710f4af03d9e709a9f3" => :sierra
   end
 
-  depends_on "ryan-robeson/gimp/libgimp2.0"
+  depends_on "piotrtomiak/gimp/libgimp2.0"
 
   def install
     system "make"
@@ -38,7 +38,7 @@ class PixelArtScalers < Formula
         `brew uninstall #{specified_name}; brew install --build-from-source #{specified_name}`
 
       Please report any issues to:
-        https://github.com/ryan-robeson/homebrew-gimp/issues
+        https://github.com/piotrtomiak/homebrew-gimp/issues
     EOS
     s
   end
